@@ -5,7 +5,7 @@ Engine** of an Apple Silicon Mac, plus which part of the chip Core ML actually p
 
 ## Run it
 
-Needs a Mac with Apple Silicon and Python 3.10–3.12 (coremltools doesn't support 3.13 yet).
+Needs a Mac with Apple Silicon and Python 3 (tested with Python 3.12 and coremltools 9.0).
 
 ```bash
 python3 -m venv .venv
