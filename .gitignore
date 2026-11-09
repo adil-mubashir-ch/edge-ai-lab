@@ -1,0 +1,19 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# generated models, datasets, builds (each folder's README says how to get them)
+models/
+*.mlpackage/
+*.mlmodelc/
+*.tflite
+*.onnx
+*.bin
+*.zip
+.pio/
+build/
+
+# macOS
+.DS_Store
