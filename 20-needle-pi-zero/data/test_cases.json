@@ -1,0 +1,299 @@
+[
+  {
+    "id": "positive_lights",
+    "category": "positive",
+    "prompt": "Dim the study lights to 30 percent.",
+    "expected_calls": [
+      {
+        "name": "control_lights",
+        "arguments": {
+          "room": "study",
+          "action": "dim",
+          "brightness_percent": 30
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "positive_thermostat",
+    "category": "positive",
+    "prompt": "Set the thermostat to 21 degrees Celsius.",
+    "expected_calls": [
+      {
+        "name": "set_thermostat",
+        "arguments": {
+          "temperature": 21
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "positive_fan",
+    "category": "positive",
+    "prompt": "Turn the bedroom fan on at high speed.",
+    "expected_calls": [
+      {
+        "name": "control_fan",
+        "arguments": {
+          "room": "bedroom",
+          "action": "on",
+          "speed": "high"
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "positive_blinds",
+    "category": "positive",
+    "prompt": "Close the living room blinds.",
+    "expected_calls": [
+      {
+        "name": "control_blinds",
+        "arguments": {
+          "room": "living_room",
+          "action": "close"
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "positive_vacuum",
+    "category": "positive",
+    "prompt": "Start the robot vacuum in the kitchen.",
+    "expected_calls": [
+      {
+        "name": "start_robot_vacuum",
+        "arguments": {
+          "action": "start",
+          "room": "kitchen"
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "paraphrase_lights",
+    "category": "paraphrase",
+    "prompt": "The study is too bright. Drop the lights down to about 15 percent.",
+    "expected_calls": [
+      {
+        "name": "control_lights",
+        "arguments": {
+          "room": "study",
+          "action": "dim",
+          "brightness_percent": 15
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "paraphrase_temperature",
+    "category": "paraphrase",
+    "prompt": "Make the house a little cooler; set the thermostat to 19 C.",
+    "expected_calls": [
+      {
+        "name": "set_thermostat",
+        "arguments": {
+          "temperature": 19
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "paraphrase_blinds",
+    "category": "paraphrase",
+    "prompt": "I don't want sunlight coming into the bedroom, so shut the blinds.",
+    "expected_calls": [
+      {
+        "name": "control_blinds",
+        "arguments": {
+          "room": "bedroom",
+          "action": "close"
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "missing_lights",
+    "category": "missing",
+    "prompt": "Dim the lights to 30 percent.",
+    "expected_calls": [],
+    "description": "Room is missing; do not guess.",
+    "critical": true
+  },
+  {
+    "id": "missing_thermostat",
+    "category": "missing",
+    "prompt": "Set the thermostat.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "missing_fan_room",
+    "category": "missing",
+    "prompt": "Turn the fan on at high speed.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "irrelevant",
+    "category": "irrelevant",
+    "prompt": "Tell me a joke about computers.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "irrelevant_knowledge",
+    "category": "irrelevant",
+    "prompt": "What is the capital of France?",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "negated_lights",
+    "category": "negation",
+    "prompt": "Do not turn on the bedroom lights.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "negated_fan",
+    "category": "negation",
+    "prompt": "Don't start the fan in the study.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "invalid_thermostat",
+    "category": "invalid",
+    "prompt": "Set the thermostat to 80 degrees Celsius.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "invalid_brightness",
+    "category": "invalid",
+    "prompt": "Dim the study lights to 140 percent.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "invalid_room_fan",
+    "category": "invalid",
+    "prompt": "Turn on the kitchen fan.",
+    "expected_calls": [],
+    "description": "",
+    "critical": true
+  },
+  {
+    "id": "parallel",
+    "category": "parallel",
+    "prompt": "Turn the living room lights on and set the thermostat to 22 degrees.",
+    "expected_calls": [
+      {
+        "name": "control_lights",
+        "arguments": {
+          "room": "living_room",
+          "action": "on"
+        }
+      },
+      {
+        "name": "set_thermostat",
+        "arguments": {
+          "temperature": 22
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "multi_argument_lights",
+    "category": "argument_extraction",
+    "prompt": "Please dim the kitchen lights to exactly 5 percent.",
+    "expected_calls": [
+      {
+        "name": "control_lights",
+        "arguments": {
+          "room": "kitchen",
+          "action": "dim",
+          "brightness_percent": 5
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "multi_argument_fan",
+    "category": "argument_extraction",
+    "prompt": "Put the study fan on medium speed.",
+    "expected_calls": [
+      {
+        "name": "control_fan",
+        "arguments": {
+          "room": "study",
+          "action": "on",
+          "speed": "medium"
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "off_lights",
+    "category": "positive",
+    "prompt": "Switch off the kitchen lights.",
+    "expected_calls": [
+      {
+        "name": "control_lights",
+        "arguments": {
+          "room": "kitchen",
+          "action": "off"
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  },
+  {
+    "id": "dock_vacuum",
+    "category": "positive",
+    "prompt": "Send the robot vacuum back to its dock in the bedroom.",
+    "expected_calls": [
+      {
+        "name": "start_robot_vacuum",
+        "arguments": {
+          "action": "dock",
+          "room": "bedroom"
+        }
+      }
+    ],
+    "description": "",
+    "critical": false
+  }
+]

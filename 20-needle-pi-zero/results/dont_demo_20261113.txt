@@ -1,0 +1,30 @@
+weights: needle3.cact
+
+"Do not turn on the bedroom lights."
+    >>> EXECUTED control_lights({"room": "bedroom", "action": "on"})
+    results: [{"ok": true}]
+    validation: null  (4.2 s)
+
+"Don't start the fan in the study."
+    results: []
+    validation: {"ungrounded": [], "negation": true}  (3.1 s)
+
+"Turn on the bedroom lights."
+    >>> EXECUTED control_lights({"room": "bedroom", "action": "on"})
+    results: [{"ok": true}]
+    validation: null  (3.8 s)
+weights: needle3-4l.cact
+
+"Do not turn on the bedroom lights."
+    >>> EXECUTED control_lights({"room": "bedroom", "action": "on"})
+    results: [{"ok": true}]
+    validation: null  (1.0 s)
+
+"Don't start the fan in the study."
+    results: []
+    validation: {"ungrounded": [], "negation": true}  (0.8 s)
+
+"Turn on the bedroom lights."
+    >>> EXECUTED control_lights({"room": "bedroom", "action": "on"})
+    results: [{"ok": true}]
+    validation: null  (1.2 s)

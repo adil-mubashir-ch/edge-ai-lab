@@ -1,0 +1,8 @@
+{
+  "tool_counts": [5, 10, 25, 50],
+  "repetitions": 5,
+  "warmup": 3,
+  "seed": 42,
+  "max_new_tokens": 256,
+  "notes": "Final publication configuration."
+}

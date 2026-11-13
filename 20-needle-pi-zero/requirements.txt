@@ -1,0 +1,6 @@
+# Needle 3 (the video's main run). For Needle 2, swap the first line for cactus-needle==2.0.12.
+cactus-compute==4.2.0
+pandas>=2.0,<3
+matplotlib>=3.7,<4
+psutil>=5.9,<7
+pytest>=8,<9

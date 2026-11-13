@@ -1,0 +1,63 @@
+{
+  "created_at_utc": "2026-11-13T12:19:32.050256+00:00",
+  "needle_version": "cactus-compute 4.2.0",
+  "weights": {
+    "path": "/home/pi/needle3-bench/needle3-4l.cact",
+    "bytes": 15390548,
+    "sha256": "c1098e2bb7cb91c28b0d6865b0c2028058344cb0bdb0cee3b409915ca51f08ec"
+  },
+  "seed": 42,
+  "seed_applied_to_needle": false,
+  "tool_counts": [
+    5,
+    10,
+    25,
+    50
+  ],
+  "repetitions": 5,
+  "warmups": 3,
+  "max_new_tokens": 256,
+  "smoke": false,
+  "num_test_cases": 23,
+  "test_case_ids": [
+    "positive_lights",
+    "positive_thermostat",
+    "positive_fan",
+    "positive_blinds",
+    "positive_vacuum",
+    "paraphrase_lights",
+    "paraphrase_temperature",
+    "paraphrase_blinds",
+    "missing_lights",
+    "missing_thermostat",
+    "missing_fan_room",
+    "irrelevant",
+    "irrelevant_knowledge",
+    "negated_lights",
+    "negated_fan",
+    "invalid_thermostat",
+    "invalid_brightness",
+    "invalid_room_fan",
+    "parallel",
+    "multi_argument_lights",
+    "multi_argument_fan",
+    "off_lights",
+    "dock_vacuum"
+  ],
+  "hardware": {
+    "timestamp_unix": 1794572372.9780173,
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "platform": "Linux-6.12.75+rpt-rpi-v8-aarch64-with-glibc2.41",
+    "machine": "aarch64",
+    "processor": "",
+    "hostname": "pi",
+    "cpu_count": 4,
+    "cpu_temperature_c": 54.768,
+    "ram_total_mb": 416.08203125,
+    "ram_available_mb": 240.0,
+    "process_rss_mb": 70.2421875,
+    "model": "Raspberry Pi Zero 2 W Rev 1.0\u0000"
+  },
+  "notes": "Benchmark uses Needle.complete() with explicit model weights. Only tool catalogue size is varied across experimental groups. Tool calls are evaluated without executing real-world actions.",
+  "label": "needle3-4l"
+}

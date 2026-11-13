@@ -1,0 +1,8 @@
+Mac check, 13 Nov 2026: needle3.cact (20 layers), cactus-compute 4.2.0, engine 4.1.0, complete(), 5 tools.
+Do not turn on the bedroom lights.         calls=[{"name": "control_lights", "arguments": {"room": "bedroom", "action": "on"}}] suppressed=[] validation={"ungrounded": [], "negation": true} conf=0.3592
+Don't turn on the bedroom lights.          calls=[{"name": "control_lights", "arguments": {"room": "bedroom", "action": "on"}}] suppressed=[] validation={"ungrounded": [], "negation": true} conf=0.5531
+Don't start the fan in the study.          calls=[] suppressed=[{"name": "control_fan", "arguments": {"room": "study", "action": "on"}}] validation={"ungrounded": [], "negation": true} conf=0.3933
+Do not start the fan in the study.         calls=[] suppressed=[{"name": "control_fan", "arguments": {"room": "study", "action": "on"}}] validation={"ungrounded": [], "negation": true} conf=0.4272
+Never turn on the bedroom lights.          calls=[{"name": "control_lights", "arguments": {"room": "bedroom", "action": "on"}}] suppressed=[] validation={"ungrounded": [], "negation": true} conf=0.4261
+Please don't turn on the bedroom lights.   calls=[{"name": "control_lights", "arguments": {"room": "bedroom", "action": "on"}}] suppressed=[] validation={"ungrounded": [], "negation": true} conf=0.4105
+On the Pi (same weights and versions) the lights call came back with validation: null at every tool count.
