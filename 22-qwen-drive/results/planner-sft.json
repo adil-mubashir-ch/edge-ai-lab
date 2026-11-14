@@ -1,0 +1,187 @@
+{
+  "planner": "planner-sft",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.8.0+cu128",
+  "num_samples": 1,
+  "repeats": 5,
+  "load_s": 45.4,
+  "runs": [
+    {
+      "scene": 0,
+      "token": "a53176b07ad432affda912ef26737f02-149",
+      "mode": "direct",
+      "ms": [
+        1279.9,
+        1273.4,
+        1277.4,
+        1282.3,
+        1274.5
+      ],
+      "median_ms": 1277.4,
+      "reasoning": null,
+      "reasoning_tokens": 0,
+      "endpoint": [
+        6.809999942779541,
+        -0.8600000143051147,
+        -0.3400000035762787
+      ],
+      "ade_m": 0.239,
+      "fde_m": 0.946
+    },
+    {
+      "scene": 0,
+      "token": "a53176b07ad432affda912ef26737f02-149",
+      "mode": "reasoning",
+      "ms": [
+        2409.9,
+        2424.1,
+        2398.2,
+        2407.0,
+        2405.5
+      ],
+      "median_ms": 2407.0,
+      "reasoning": "Accelerate through the intersection as the traffic light is green.",
+      "reasoning_tokens": 12,
+      "endpoint": [
+        7.050000190734863,
+        -0.9100000262260437,
+        -0.3499999940395355
+      ],
+      "ade_m": 0.207,
+      "fde_m": 0.793
+    },
+    {
+      "scene": 1,
+      "token": "74cf0a3e1a537277b1258a683de98b4f-149",
+      "mode": "direct",
+      "ms": [
+        1255.5,
+        1245.3,
+        1241.7,
+        1239.3,
+        1233.7
+      ],
+      "median_ms": 1241.7,
+      "reasoning": null,
+      "reasoning_tokens": 0,
+      "endpoint": [
+        11.920000076293945,
+        11.470000267028809,
+        1.3200000524520874
+      ],
+      "ade_m": 0.473,
+      "fde_m": 1.793
+    },
+    {
+      "scene": 1,
+      "token": "74cf0a3e1a537277b1258a683de98b4f-149",
+      "mode": "reasoning",
+      "ms": [
+        2425.8,
+        2408.8,
+        2426.4,
+        2415.9,
+        2391.3
+      ],
+      "median_ms": 2415.9,
+      "reasoning": "Turn left at the clear intersection and accelerate to the target speed.",
+      "reasoning_tokens": 13,
+      "endpoint": [
+        11.920000076293945,
+        11.430000305175781,
+        1.3200000524520874
+      ],
+      "ade_m": 0.464,
+      "fde_m": 1.807
+    },
+    {
+      "scene": 2,
+      "token": "3c243f1b8d4b859587b48377893a7512-149",
+      "mode": "direct",
+      "ms": [
+        1250.5,
+        1238.9,
+        1236.0,
+        1236.6,
+        1237.8
+      ],
+      "median_ms": 1237.8,
+      "reasoning": null,
+      "reasoning_tokens": 0,
+      "endpoint": [
+        17.0,
+        -12.109999656677246,
+        -0.44999998807907104
+      ],
+      "ade_m": 0.408,
+      "fde_m": 1.187
+    },
+    {
+      "scene": 2,
+      "token": "3c243f1b8d4b859587b48377893a7512-149",
+      "mode": "reasoning",
+      "ms": [
+        2226.1,
+        2202.1,
+        2200.4,
+        2214.1,
+        2199.4
+      ],
+      "median_ms": 2202.1,
+      "reasoning": "Turn right and accelerate to follow the navigation command.",
+      "reasoning_tokens": 10,
+      "endpoint": [
+        17.15999984741211,
+        -12.350000381469727,
+        -0.46000000834465027
+      ],
+      "ade_m": 0.433,
+      "fde_m": 1.379
+    },
+    {
+      "scene": 3,
+      "token": "2438d38a0788721ec700c8bd71dadc94-148",
+      "mode": "direct",
+      "ms": [
+        1249.8,
+        1245.8,
+        1233.8,
+        1240.0,
+        1236.4
+      ],
+      "median_ms": 1240.0,
+      "reasoning": null,
+      "reasoning_tokens": 0,
+      "endpoint": [
+        34.47999954223633,
+        -0.41999998688697815,
+        -0.05000000074505806
+      ],
+      "ade_m": 0.282,
+      "fde_m": 0.271
+    },
+    {
+      "scene": 3,
+      "token": "2438d38a0788721ec700c8bd71dadc94-148",
+      "mode": "reasoning",
+      "ms": [
+        2426.0,
+        2388.1,
+        2397.5,
+        2396.0,
+        2398.1
+      ],
+      "median_ms": 2397.5,
+      "reasoning": "Slow down to safely pass the parked pickup truck on the right.",
+      "reasoning_tokens": 13,
+      "endpoint": [
+        34.15999984741211,
+        -0.38999998569488525,
+        -0.05999999865889549
+      ],
+      "ade_m": 0.237,
+      "fde_m": 0.507
+    }
+  ],
+  "peak_gib": 12.31
+}

@@ -1,0 +1,69 @@
+{
+  "model": "nvidia/Alpamayo2-Edge",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.8.0+cu128",
+  "attn": "sdpa",
+  "clip": "ea7bbd31-b7a5-4972-8dbd-7089e6b53de4",
+  "t0_us": 4000000,
+  "nav_text": "Turn right in 30m",
+  "load_s": 5.2,
+  "median_ms": 1254.9,
+  "peak_gib": 5.76,
+  "runs": [
+    {
+      "seed": 43,
+      "ms": 1284.5,
+      "reasoning": "Decelerate to approach the intersection and turn right to follow our route, yielding as governed by the yield sign.",
+      "reasoning_tokens": 23,
+      "endpoint": [
+        33.05,
+        -3.93,
+        0.0
+      ]
+    },
+    {
+      "seed": 44,
+      "ms": 1308.6,
+      "reasoning": "Decelerate to approach the intersection and turn right to follow our route, yielding as required by the give-way sign.",
+      "reasoning_tokens": 24,
+      "endpoint": [
+        35.04,
+        -5.97,
+        0.0
+      ]
+    },
+    {
+      "seed": 45,
+      "ms": 1217.5,
+      "reasoning": "Decelerate approaching the intersection to turn right to follow our route, as governed by the yield sign.",
+      "reasoning_tokens": 21,
+      "endpoint": [
+        31.82,
+        -3.26,
+        0.0
+      ]
+    },
+    {
+      "seed": 46,
+      "ms": 1011.3,
+      "reasoning": "Decelerate and turn right at the intersection to follow our route.",
+      "reasoning_tokens": 14,
+      "endpoint": [
+        29.91,
+        -1.17,
+        0.0
+      ]
+    },
+    {
+      "seed": 47,
+      "ms": 1254.9,
+      "reasoning": "Decelerate and turn right at the intersection to follow our route, yielding as required by the yield sign.",
+      "reasoning_tokens": 22,
+      "endpoint": [
+        33.68,
+        -7.17,
+        0.0
+      ]
+    }
+  ]
+}

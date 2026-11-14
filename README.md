@@ -14,6 +14,7 @@ caveats. If you run something, post your numbers under the video. That's the fun
 | 16 | Why Every Chip Suddenly Has an NPU | [`16-npu`](16-npu) | CPU vs GPU vs Neural Engine benchmark for Apple Silicon (Core ML) |
 | 17 | NVIDIA Squeezed a 74B AI Into 2 Bits. So I Tested It. | [`17-two-bit`](17-two-bit) | 2-bit vs 4-bit vs 8-bit at the same memory: Qwen3 + llama.cpp benchmark |
 | 20 | I Told My AI "Don't". It Did It Anyway | [`20-needle-pi-zero`](20-needle-pi-zero) | Needle 2 vs Needle 3 tool-calling benchmark on a Pi Zero 2 W |
+| 22 | Alibaba's Self-Driving AI Never Stops Talking | [`22-qwen-drive`](22-qwen-drive) | Qwen-Drive vs Alpamayo 2 Edge timed on a Colab A100 (colab CLI) |
 
 ## Layout
 

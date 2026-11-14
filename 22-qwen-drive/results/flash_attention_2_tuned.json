@@ -1,0 +1,126 @@
+{
+  "model": "nvidia/Alpamayo2-Edge",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.8.0+cu128",
+  "attn": "flash_attention_2",
+  "accel": "tuned",
+  "accel_describe": "{'config': {'mode': 'tuned', 'attention': 'auto', 'parts': ('prefill', 'decode', 'expert'), 'kv_bucket': 256, 'warmup': 2, 'compile': True, 'cuda_graphs': True}, 'parts': ['prefill', 'decode', 'expert'], 'skipped': {}, 'kernels': {'prefill': 'sdpa', 'decode': 'fa2', 'expert': 'fa2'}, 'graph_builds': 3, 'build_seconds': 113.61, 'builds': [{'part': 'prefill', 'key': '(3584, 3328)', 'cuda_graph': True, 'seconds': 41.27}, {'part': 'decode_sample', 'key': '(1, 3584, True)', 'cuda_graph': True, 'seconds': 47.5}, {'part': 'expert', 'key': \"(1, 3584, 'steps=10')\", 'cuda_graph': True, 'seconds': 24.84}], 'fallbacks': {}}",
+  "clip": "ea7bbd31-b7a5-4972-8dbd-7089e6b53de4",
+  "t0_us": 4000000,
+  "nav_text": "Turn right in 30m",
+  "load_s": 4.9,
+  "median_ms": 274.9,
+  "peak_gib": 5.78,
+  "runs": [
+    {
+      "seed": 43,
+      "ms": 236.1,
+      "reasoning": "Decelerate and turn right at the intersection to follow our route.",
+      "reasoning_tokens": 14,
+      "endpoint": [
+        33.32,
+        -4.54,
+        0.0
+      ]
+    },
+    {
+      "seed": 44,
+      "ms": 274.8,
+      "reasoning": "Decelerate to approach the intersection and turn right to follow our route, yielding as required by the yield sign.",
+      "reasoning_tokens": 23,
+      "endpoint": [
+        35.0,
+        -5.96,
+        0.0
+      ]
+    },
+    {
+      "seed": 45,
+      "ms": 286.9,
+      "reasoning": "Decelerate and turn right at the intersection to follow our route, yielding to cross traffic as required by the yield sign.",
+      "reasoning_tokens": 25,
+      "endpoint": [
+        32.12,
+        -3.79,
+        0.0
+      ]
+    },
+    {
+      "seed": 46,
+      "ms": 279.8,
+      "reasoning": "Slow down and turn right at the intersection to follow our route, as the yield-controlled junction is clear of conflicting traffic.",
+      "reasoning_tokens": 24,
+      "endpoint": [
+        30.15,
+        -1.35,
+        0.0
+      ]
+    },
+    {
+      "seed": 47,
+      "ms": 275.1,
+      "reasoning": "Decelerate and turn right at the intersection to follow our route, yielding as required by the give-way sign.",
+      "reasoning_tokens": 23,
+      "endpoint": [
+        33.66,
+        -7.13,
+        0.0
+      ]
+    },
+    {
+      "seed": 48,
+      "ms": 275.5,
+      "reasoning": "Decelerate to approach the intersection and turn right to follow our route, yielding as required by the yield sign.",
+      "reasoning_tokens": 23,
+      "endpoint": [
+        34.08,
+        -7.07,
+        0.0
+      ]
+    },
+    {
+      "seed": 49,
+      "ms": 309.7,
+      "reasoning": "Decelerate on approach to the intersection to prepare for a right turn to follow our route, yielding to potential cross traffic as governed by the yield sign.",
+      "reasoning_tokens": 31,
+      "endpoint": [
+        32.46,
+        -3.59,
+        0.0
+      ]
+    },
+    {
+      "seed": 50,
+      "ms": 270.2,
+      "reasoning": "Decelerate and turn right at the intersection to follow our route, yielding as required by the yield sign.",
+      "reasoning_tokens": 22,
+      "endpoint": [
+        32.98,
+        -4.32,
+        0.0
+      ]
+    },
+    {
+      "seed": 51,
+      "ms": 198.4,
+      "reasoning": "<NOMINAL>",
+      "reasoning_tokens": 5,
+      "endpoint": [
+        32.43,
+        -1.71,
+        0.0
+      ]
+    },
+    {
+      "seed": 52,
+      "ms": 198.4,
+      "reasoning": "<NOMINAL>",
+      "reasoning_tokens": 5,
+      "endpoint": [
+        33.2,
+        -4.92,
+        0.0
+      ]
+    }
+  ]
+}

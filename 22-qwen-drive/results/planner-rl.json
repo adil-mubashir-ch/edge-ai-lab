@@ -1,0 +1,99 @@
+{
+  "planner": "planner-rl",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.8.0+cu128",
+  "num_samples": 1,
+  "repeats": 5,
+  "load_s": 42.0,
+  "runs": [
+    {
+      "scene": 0,
+      "token": "a53176b07ad432affda912ef26737f02-149",
+      "mode": "reasoning",
+      "ms": [
+        2381.4,
+        2382.6,
+        2382.2,
+        2397.4,
+        2377.9
+      ],
+      "median_ms": 2382.2,
+      "reasoning": "Accelerate through the intersection as the traffic light is green.",
+      "reasoning_tokens": 12,
+      "endpoint": [
+        6.730000019073486,
+        -0.75,
+        -0.3700000047683716
+      ],
+      "ade_m": 0.34,
+      "fde_m": 1.079
+    },
+    {
+      "scene": 1,
+      "token": "74cf0a3e1a537277b1258a683de98b4f-149",
+      "mode": "reasoning",
+      "ms": [
+        2377.5,
+        2405.5,
+        2411.5,
+        2405.1,
+        2415.2
+      ],
+      "median_ms": 2405.5,
+      "reasoning": "Turn left at the clear intersection and accelerate to the target speed.",
+      "reasoning_tokens": 13,
+      "endpoint": [
+        13.050000190734863,
+        11.039999961853027,
+        1.350000023841858
+      ],
+      "ade_m": 0.255,
+      "fde_m": 1.113
+    },
+    {
+      "scene": 2,
+      "token": "3c243f1b8d4b859587b48377893a7512-149",
+      "mode": "reasoning",
+      "ms": [
+        2245.4,
+        2224.8,
+        2227.5,
+        2231.4,
+        2217.3
+      ],
+      "median_ms": 2227.5,
+      "reasoning": "Turn right and accelerate to follow the navigation command.",
+      "reasoning_tokens": 10,
+      "endpoint": [
+        17.479999542236328,
+        -12.260000228881836,
+        -0.4099999964237213
+      ],
+      "ade_m": 0.592,
+      "fde_m": 1.258
+    },
+    {
+      "scene": 3,
+      "token": "2438d38a0788721ec700c8bd71dadc94-148",
+      "mode": "reasoning",
+      "ms": [
+        2406.9,
+        2407.5,
+        2406.4,
+        2460.1,
+        2405.6
+      ],
+      "median_ms": 2406.9,
+      "reasoning": "Slow down to safely pass the parked pickup truck on the right.",
+      "reasoning_tokens": 13,
+      "endpoint": [
+        34.47999954223633,
+        -0.14000000059604645,
+        -0.05999999865889549
+      ],
+      "ade_m": 0.439,
+      "fde_m": 0.152
+    }
+  ],
+  "peak_gib": 11.2
+}
